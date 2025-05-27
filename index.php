@@ -1,8 +1,8 @@
 <?php
-$host = "localhost";
-$user = "root";
-$pass = "";
-$dbname = "todo_app";
+$host = "localhost"; // Change this to your database host
+$user = "root"; // Change this to your database username
+$pass = ""; // Change this to your database password
+$dbname = "todo_app"; // Change this to your database name
 
 $conn = new mysqli($host, $user, $pass, $dbname);
 if ($conn->connect_error) {
