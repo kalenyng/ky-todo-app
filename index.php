@@ -1,4 +1,10 @@
 <?php
+try {
+    $pdo = new PDO("mysql:host=localhost;dbname=job_tracker", 'root', '');
+    echo "Connected successfully to dev DB!";
+} catch (PDOException $e) {
+    die("Connection failed: " . $e->getMessage());
+}
 $host = "localhost"; // Change this to your database host
 $user = "root"; // Change this to your database username
 $pass = ""; // Change this to your database password
